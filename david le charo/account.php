@@ -22,7 +22,7 @@
         echo 'you will have to pay to save another file';
       }
       else {
-        echo exec("mv {$fname}.txt texts/{$fname}.txt");
+        rename("{$fname}.txt", "texts/{$fname}.txt");
 }
     
   }
